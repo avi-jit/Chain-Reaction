@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.avinash.avijit.chainreaction" >
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Avijit"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".PlayScreen"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/FullscreenTheme" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.PLAYSCREEN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".SignUp"
+            android:label="@string/title_activity_sign_up" >
+
+            <intent-filter>
+                <action android:name="com.avinash.avijit.chainreaction.SIGNUP" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".SignIn"
+            android:label="@string/title_activity_sign_in" >
+
+            <intent-filter>
+                <action android:name="com.avinash.avijit.chainreaction.SIGNIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".Home"
+            android:label="@string/title_activity_home" >
+
+            <intent-filter>
+                <action android:name="com.avinash.avijit.chainreaction.HOME" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+    </application>
+
+</manifest>
